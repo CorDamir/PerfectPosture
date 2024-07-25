@@ -32,14 +32,17 @@
                     <img src="assets/favicon/posture128.png" alt="Perfect posture logo">
                     <h2>PERFECT <br> POSTURE</h2>
                 </a>
-                <!-- standard icon for dropdown menu -->
-                <i class="fa-solid fa-bars"></i>
+                <!-- standard icon for dropdown menu as a checkbox label -->
+                <input type="checkbox" id="menu-button" name="menu-toggle" class="hidden-element"> 
+                <label for="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <!-- menu as a list -->
-                <nav id="menu-element">
+                <nav id="menu-element" class="hidden-element">
                     <ul>
-                        <li><a href="index.html"></a><h2>HOME</h2></li>
-                        <li><a href=""></a><h2>TEXT1</h2></li>
-                        <li><a href=""></a><h2>TEXT2</h2></li>
+                        <li class="active-page"><a href="index.html">HOME <i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="">EXERCISES <i class="fa-solid fa-hand-fist"></i></a></li>
+                        <li><a href="">SIGN UP <i class="fa-solid fa-user"></i></a></li>
                     </ul>
                 </nav>
         </header>

@@ -15,6 +15,7 @@ header {
     background-color: #fff;
     /* make header always on top */
     position: fixed;
+    box-shadow: 0 3px 3px 3px;
     /* flexbox style */
     display: flex;
     align-items: center;
@@ -39,27 +40,58 @@ header {
 }
 
 /* menu button style */
-header > i {
+header > label {
     font-size: 50px;
     margin: 0 25px;
-    font-weight: 100;
+}
+
+
+/* rotate menu icon and show menu on click */
+#menu-button:checked ~ #menu-element {
+    display: block;
+}
+
+#menu-button:checked ~ label > i {
+    transform: rotate(90deg);
 }
 
 /* menu style */
-#menu-element{
+#menu-element {
     position: fixed;
     background-color:#fff;
-    top: 92px;
+    top: 91px;
     right: 0;
     padding-right: 25px;
+    padding-left: 15px;
     text-align: right;
+    box-shadow: -5px 5px 5px #0f0f0f;
+    border-radius: 0 0 5px 5px;
+}
+
+#menu-element > ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+/* style menu links */
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:visited {
+    all: unset;
+}
+
+nav ul li {
+    margin-bottom: 15px;
 }
 
 main {
     flex-grow: 1;
     background-color: #1d3557;
     /* make room for header */
-    padding: 80px 0 0 0;
+    padding-top: 92px;
 }
 
 footer {
@@ -67,3 +99,13 @@ footer {
     width: 100%;
 }
 
+/* class to hide elements */
+.hidden-element {
+    display: none;
+}
+
+/* class to select active page on menu */
+.active-page {
+    text-shadow: #000 2px 2px 5px;
+    font-weight: bold;
+}
