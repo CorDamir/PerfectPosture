@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato&family=Oswald:wght@200..700&display=swap');
+
 /* BASIC LAYOUT */
 body {
     margin: 0;
@@ -26,6 +28,7 @@ header {
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: "Julius Sans One", sans-serif;
     color: #000;
 }
 
@@ -37,7 +40,8 @@ header {
 /* style the menu button */
 header > i {
     font-size: 50px;
-    margin-right: 25px;
+    margin: 0 25px;
+    font-weight: 100;
 }
 
 main {
