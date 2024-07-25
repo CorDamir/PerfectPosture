@@ -19,16 +19,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* consistent font on menu and logo */
+    font-family: "Julius Sans One", sans-serif;
 }
 
-/* LOGO STYLE */
+/* logo style */
 #logo-with-text {
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: "Julius Sans One", sans-serif;
     color: #000;
 }
 
@@ -37,11 +38,21 @@ header {
     height: 64px;
 }
 
-/* style the menu button */
+/* menu button style */
 header > i {
     font-size: 50px;
     margin: 0 25px;
     font-weight: 100;
+}
+
+/* menu style */
+#menu-element{
+    position: fixed;
+    background-color:#fff;
+    top: 92px;
+    right: 0;
+    padding-right: 25px;
+    text-align: right;
 }
 
 main {
