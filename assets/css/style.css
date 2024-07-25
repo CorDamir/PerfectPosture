@@ -40,18 +40,17 @@ header {
 }
 
 /* menu button style */
-header > label {
+#menu-icon {
     font-size: 50px;
     margin: 0 25px;
 }
-
 
 /* rotate menu icon and show menu on click */
 #menu-button:checked ~ #menu-element {
     display: block;
 }
 
-#menu-button:checked ~ label > i {
+#menu-button:checked ~ #menu-icon > i {
     transform: rotate(90deg);
 }
 
@@ -108,4 +107,32 @@ footer {
 .active-page {
     text-shadow: #000 2px 2px 5px;
     font-weight: bold;
+}
+
+
+/* Wider than 700 px displays */
+@media screen and (min-width: 700px) {
+   
+    #menu-element {
+        all: unset;
+        flex-grow: 1;
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #menu-element > ul {
+        flex-grow: 1;
+        display: flex;
+        padding-right: 5%;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #menu-element > ul > li {
+        margin: 0 3%;
+    }
+
 }
