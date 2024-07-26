@@ -15,6 +15,7 @@ header {
     background-color: #fff;
     /* make header always on top */
     position: fixed;
+    z-index: 99;
     box-shadow: 0 3px 3px 3px;
     /* flexbox style */
     display: flex;
@@ -42,6 +43,7 @@ header {
 #logo-with-text > h2 {
     margin: 0;
 }
+
 /* menu button style */
 #menu-icon {
     padding-top: 5px;
@@ -76,7 +78,7 @@ header {
     padding-inline-start: 0;
 }
 
-/* style menu links */
+/* menu links style */
 #menu-element a {
     text-decoration: none;
     font-size: 20px;
@@ -95,14 +97,53 @@ main {
     flex-grow: 1;
     /* make room for header */
     padding-top: 64px;
-    /* flex style */
+    font-family: 'Oswald';
 }
 
 /* hero image and text */
 #hero {
+    position: relative;
     height: 600px;
     background: url("../pics/patrick-hendry-w5SgojGZooI-unsplash.jpg") no-repeat 45% center / cover;
 }
+
+#hero-text, .benefit-card {
+    position: absolute;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 15px;
+    border-radius: 15%;
+    box-shadow: #000 0 2px 5px;
+    left: 10%;
+    top: 8%;
+    text-align: center;
+}
+
+#hero-text p {
+    margin: 2px;
+    font-size: 130%;
+}
+
+/* benefits section */
+#benefits {
+    margin: 0 5%;
+    text-align: center;
+    font-size: 120%;
+}
+
+#benefits-main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    position: inherit;
+    flex-grow: 1;
+    max-width: 280px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
 
 /* FOOTER STYLE */
 footer {
@@ -157,7 +198,7 @@ footer {
 
 /* Wider than 700 px displays */
 @media screen and (min-width: 700px) {
-   
+   /* set non-foldable menu */
     #menu-element {
         all: unset;
         flex-grow: 1;
@@ -180,4 +221,8 @@ footer {
         margin: 0 3%;
     }
 
+    /* change position of hero text */
+    #hero-text {
+        top: 35%;
+    }    
 }
