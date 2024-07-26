@@ -73,19 +73,20 @@ header {
 }
 
 /* style menu links */
-nav a {
+#menu-element a {
     text-decoration: none;
     font-size: 20px;
 }
 
-nav a:visited {
+#menu-element a:visited {
     all: unset;
 }
 
-nav ul li {
+#menu-element ul li {
     margin-bottom: 15px;
 }
 
+/* MAIN STYLE  */
 main {
     flex-grow: 1;
     background-color: #1d3557;
@@ -93,9 +94,43 @@ main {
     padding-top: 92px;
 }
 
+/* FOOTER STYLE */
 footer {
-    background-color: #70161e;
+    background-color: #335c81;
     width: 100%;
+    font-size: 2rem;
+    display: flex;
+}
+
+.side-spacers {
+    flex-grow: 1;
+}
+
+#social-media-container {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    max-width: 480px;
+}
+
+#social-media-container > a {
+    text-decoration: none;
+}
+
+#social-media-container > a:hover {
+    text-shadow: #fff 1px 1px 2px;
+    font-weight: bold;
+}
+
+#social-media-container > a:visited {
+    all: unset;
+}
+
+#social-media-container > a:active {
+    all: unset;
 }
 
 /* class to hide elements */
