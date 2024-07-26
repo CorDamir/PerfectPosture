@@ -39,8 +39,12 @@ header {
     height: 64px;
 }
 
+#logo-with-text > h2 {
+    margin: 0;
+}
 /* menu button style */
 #menu-icon {
+    padding-top: 5px;
     font-size: 50px;
     margin: 0 25px;
 }
@@ -58,7 +62,7 @@ header {
 #menu-element {
     position: fixed;
     background-color:#fff;
-    top: 91px;
+    top: 63px;
     right: 0;
     padding-right: 25px;
     padding-left: 15px;
@@ -89,14 +93,20 @@ header {
 /* MAIN STYLE  */
 main {
     flex-grow: 1;
-    background-color: #1d3557;
     /* make room for header */
-    padding-top: 92px;
+    padding-top: 64px;
+    /* flex style */
+}
+
+/* hero image and text */
+#hero {
+    height: 600px;
+    background: url("../pics/patrick-hendry-w5SgojGZooI-unsplash.jpg") no-repeat 45% center / cover;
 }
 
 /* FOOTER STYLE */
 footer {
-    background-color: #335c81;
+    background-color: #fff;
     width: 100%;
     font-size: 2rem;
     display: flex;
@@ -121,7 +131,7 @@ footer {
 }
 
 #social-media-container > a:hover {
-    text-shadow: #fff 1px 1px 2px;
+    text-shadow: #000 1px 1px 2px;
     font-weight: bold;
 }
 
@@ -161,7 +171,7 @@ footer {
     #menu-element > ul {
         flex-grow: 1;
         display: flex;
-        padding-right: 5%;
+        padding-right: 1%;
         justify-content: end;
         align-items: center;
     }
