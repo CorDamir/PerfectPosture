@@ -156,6 +156,12 @@ main {
     background-color: #858585;
 }
 
+#main-exercises p {
+    font-size: 130%;
+    padding: 15px;
+    text-align: justify;
+}
+
 #main-exercises section {
     background-color: #383737;
     color: #fff;
