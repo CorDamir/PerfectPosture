@@ -84,8 +84,13 @@ header {
     font-size: 20px;
 }
 
+/* remove default link styling */
 #menu-element a:visited {
     all: unset;
+}
+
+#menu-element a:link {
+    color: #000;
 }
 
 #menu-element ul li {
@@ -175,12 +180,13 @@ footer {
     font-weight: bold;
 }
 
+/* remove default link styling */
 #social-media-container > a:visited {
     all: unset;
 }
 
-#social-media-container > a:active {
-    all: unset;
+#social-media-container > a:link {
+    color: #000;
 }
 
 /* class to hide elements */
