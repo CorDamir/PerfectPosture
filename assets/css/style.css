@@ -208,10 +208,9 @@ to use element padding+margins instead */
     margin: 15px;
     padding: 15px;
     border-radius: 10%;
-    min-width: 175px;
 }
 
-iframe {
+#main-exercises section img {
     margin: 10px;
     width: 90%;
 }
