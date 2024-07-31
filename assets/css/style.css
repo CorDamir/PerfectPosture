@@ -110,7 +110,7 @@ main {
 #hero {
     position: relative;
     height: 600px;
-    background: url("../pics/patrick-hendry-w5SgojGZooI-unsplash.jpg") no-repeat 45% center / cover;
+    background: url("../pics/patrick-hendry-w5SgojGZooI-unsplash.webp") no-repeat 45% center / cover;
 }
 
 #hero-text, .benefit-card {
@@ -217,7 +217,7 @@ to use element padding+margins instead */
 /* SIGNUP PAGE STYLE */
 #main-signup{
     flex-grow: 1;
-    background-image: url("../pics/scott-webb-gWerBZuKM9c-unsplash.jpg");
+    background-image: url("../pics/scott-webb-gWerBZuKM9c-unsplash.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
