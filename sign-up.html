@@ -37,8 +37,8 @@
                 </a>
                 
                 <!-- standard icon for dropdown menu as a checkbox label -->
-                <input type="checkbox" id="menu-button" name="menu-toggle" class="hidden-element" aria-hidden="true"> 
-                <label for="menu-button" id="menu-icon">
+                <input type="checkbox" id="menu-button" name="menu-toggle" class="hidden-element"> 
+                <label for="menu-button" id="menu-icon" aria-hidden="true">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 
@@ -52,9 +52,36 @@
                 </nav>
         </header>
 
-        <main>
-           
+        <main id="main-signup">
+            
+            <section>
+                <form id="signup-form" action="https://formdump.codeinstitute.net" method="POST">
+                    
+                    <label for="first-name">First name: </label>
+                    <input type="text" id="first-name" name="first_name" required>
 
+                    <label for="last-name">Last name: </label>
+                    <input type="text" id="last-name" name="last_name" required>
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="e_mail" required>
+            
+                    <p>Personalized training?<p>
+                        
+                    <div id="form-radio">
+                        <label for="radio-yes">Yes </label>
+                        <input type="radio" id="radio-yes" name="personalized_plan" value="yes" required>
+                        
+                        <label for="radio-no">No </label>
+                        <input type="radio" id="radio-no" name="personalized_plan" value="no" required>
+                        
+                        <label for="radio-decide">Decide later </label>
+                        <input type="radio" id="radio-decide" name="personalized_plan" value="decide" required>
+                    </div>
+
+                    <button type="submit" id="submit-button">Join!</button>    
+                </form>
+            </section>
 
         </main>
 

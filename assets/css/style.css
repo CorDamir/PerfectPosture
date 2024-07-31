@@ -214,6 +214,40 @@ to use element padding+margins instead */
     width: 90%;
 }
 
+/* SIGNUP PAGE STYLE */
+#main-signup{
+    flex-grow: 1;
+    background-image: url("../pics/scott-webb-gWerBZuKM9c-unsplash.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#signup-form{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+}
+
+#signup-form p {
+    margin: 0 0 10px 0;
+}
+
+#signup-form input,
+#signup-form p,
+#form-radio {
+    margin-bottom: 10px;
+}
+
+#form-text {
+
+}
+
 /* FOOTER STYLE */
 footer {
     background-color: #fff;
