@@ -227,25 +227,31 @@ to use element padding+margins instead */
     width: 230px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.65);
     border-radius: 10%;
     padding: 20px;
-    position: relative;
-    margin: auto;
-}
-
-#signup-form p {
-    margin: 0 0 10px 0;
+    margin: 15% auto;
+    box-shadow: #0f0f0f 0 2px 10px;
 }
 
 #signup-form input,
-#signup-form p,
+#signup-form button{
+    border-radius: 15px;
+}
+
+#signup-form p {
+    margin: 0 0 5px 0;
+}
+
+#signup-form input,
 #form-radio {
     margin-bottom: 10px;
 }
 
-#form-text {
-
+#signup-form button {
+    height: 50px;
+    width: 60%;
+    align-self: center;
 }
 
 /* FOOTER STYLE */
@@ -333,5 +339,9 @@ footer {
     #main-exercises section {
         width: 80%;
         margin: 20px auto;
+    }
+
+    #signup-form{
+        margin: 10% 20%;
     }
 }
