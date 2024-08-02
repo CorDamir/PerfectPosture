@@ -215,6 +215,13 @@ to use element padding+margins instead */
 }
 
 /* SIGNUP PAGE STYLE */
+
+/* remove all fieldset styling to treat 
+semantic element as flexbox div */
+#form-radio {
+    all: unset;
+}
+
 #main-signup{
     flex-grow: 1;
     background-image: url("../pics/scott-webb-gWerBZuKM9c-unsplash.webp");
