@@ -1,131 +1,137 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Perfect Posture
 
-Welcome Damir Ćorić,
+"Perfect Posture" is a simple, informative and motivating website encouraging users to start and continue working on their postures. Targeting all users of PCs, laptops, tablets and smartphones as those are primary causes of suboptimal posture by using a website that displays on those same devices! Benefits are plentiful and amazing, they greatly improve quality of life and take less than ten minutes a day following simple structured exercise advice on Perfect Posture.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mockup: website on different devices](./assets/readme-images/devices-mockup.png)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+<br>
 
-## Gitpod Reminders
+ ## FEATURES
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  ### HEADER
 
-`python3 -m http.server`
+  ![Header screenshot](./assets/readme-images/header-wide.png)
 
-A blue button should appear to click: _Make Public_,
+  Top of the page always contains a header with logo on the left and navigation on the right providing consistency and intuitive navigation as well as hinting on general black and white color scheme of entire site.
 
-Another blue button should appear to click: _Open Browser_.
+  **Navigation**
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+  Navigation on header is responsive to screen width. For smartphones it's a user-expected standard menu icon that rotates and displays links menu. For wider display devices it's a menu bar as visible above. Logo will bring users to homepage as well.
 
-A blue button should appear to click: _Make Public_,
+  ![Header with menu icon screenshot](./assets/readme-images/header-narrow.png)
 
-Another blue button should appear to click: _Open Browser_.
+  ![Header with menu expanded screenshot](./assets/readme-images/header-menu-expanded.png)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  ### FOOTER
 
-To log into the Heroku toolbelt CLI:
+  Footer follows the same black and white color scheme, provides links to social media sites, appearing on the bottom after scrolling through entire content and reinforcing feeling of consistency.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  ![Footer screenshot](./assets/readme-images/footer.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+  ### HOME PAGE
 
-### Connecting your Mongo database
+  **Landing image**
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+  ![home page initial view screenshot](./assets/readme-images/landing-view.png)
 
-------
+  Visiting Perfect Posture will first provide a view of a theme-fitting black and white image of a woman silhouette with good posture in exercise position. On the image is a rounded-edge card-type element drawing specific attention to itself with motivating text. Image is set to specific height revealing large text below indicating the reasons to use the page are below and encouraging users to scroll and read.
 
-## Release History
+  **Reasons section**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  ![Reasons to work on posture separated to cards](./assets/readme-images/reasons-section.png)
 
-**June 18, 2024,** Add Mongo back into template
+  Scrolling down users can find fantastic benefits separated into card-like elements with shadows which is consistent with text on landing image and general theme of entire site. Cards contain bigger bold text drawing user attention to what speaks most to them and a short explanation how working on posture will achieve that. Motivated yet? Let's head over to exercises page.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+  ### EXERCISES PAGE
 
-**May 28 2024:** Fix Mongo and Links installs
+  This page contains a very short introduction on how to use it, working with infamously short attention span of smartphone users and in that way encouraging a start. It uses consistent black and white theme only resorting to shades of gray and also consistent shadow casting card-like elements to divide sections and exercises in those sections. Everything is centered. Clean and clear, intuitive design is the way to go! Users can easily recognize which content belongs to which section.
 
-**April 26 2024:** Update node version to 16
+  ![exercises page screenshot](./assets/readme-images/exercises-page.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+  ### SIGN-UP PAGE
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  Consistent with rest of the site, this page has a fitting image of a woman with great posture on black background and a card-like element with sign up form clearly drawing attention to itself.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  ![sign-up page screenshot](./assets/readme-images/sign-up-page.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  ### INTUITION, CONSISTENCY AND RESPONSIVENESS
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  Entire site uses consistent color scheme and content separation design providing clean and clear look. In addition it is fully responsive across all screen displays and very intuitive to use.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  ### FUTURE FEATURES
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - add more exercises and a random daily generator; a feature that picks random exercise from each section and presents it to user as daily workout
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - implement offer to design personalized training and group sessions
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - implement community page where signed up users can share progress and advice
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - add educational page with information on exact muscle-bone interactions and why exercises work
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## BUGS
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  ### FIXED DURING TESTING
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  | PROBLEM | FIX |
+  | - | - | 
+  | fontawesome script tag error on html validation | move script tag from html element to body element  |
+  | stray html tag on html validation | remove unnecessary /p element |
+  | links to lower back exercises opening on same page  | add target=_"blank" to a elements |
+  | preconnection to fontawesome not working from deployed site | add crossorigin attribute to preconnect |
+  | links in footer not satisfying accessibility standard | add aria-labels to links | 
+  |  | | 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  ### CURRENT BUGS
 
-------
+  No bugs after testing phase, all features work as intended!
 
-## FAQ about the uptime script
+<br>  
 
-**Why have you added this script?**
+## FINAL TESTING INFORMATION
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  ### MANUAL USAGE TEST
 
-**How will this affect me?**
+  Usage test was done on android phone and iPad. On PC it was done using chrome, opera, edge and firefox.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  | Test | Result |
+  |-|-|
+  |touch/click on logo | opened home page|
+  |touch/click on menu icon | icon rotated, menu displayed |
+  |touch/click on each menu item | opens desired page, active page appropriately marked|
+  |scroll page | header always on top, footer on scroll end|
+  |resize viewport on each page | menu change at appropriate width, all elements on all pages align as intended|
+  |touch/click social media icons in footer | opened desired page in new tab|
+  |touch/click exercise thumbnail | opened appropriate youtube video in new tab|
+  |form submit with no first name | form asked to fill in name field|
+  |form submit with no last name | form asked to fill in last name field|
+  |form submit with no e-mail | form asked to fill in e-mail field|
+  |form submit with incorrect e-mail structure | form asked to have "@" in e-mail field|
+  |form submit without radio button selection | form asked to select one of the options|
+  |proper form submit | information successfully transfered| 
+  |||
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+  ### HTML VALIDATION
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  
 
-**So….?**
+  ### CSS VALIDATION
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+  ### LIGHTHOUSE TEST
 
-**Can I opt out?**
+  
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+## BUILD CONTEXT
 
-Happy coding!
+### DESIGN
+
+### ENVIRONMENT
+
+### DEPLOYMENT
+
+## CREDITS
