@@ -114,24 +114,49 @@
 
   ### HTML VALIDATION
 
-  
+  All pages verified with no errors with [W3C HTML validator](https://validator.w3.org/nu/).
 
   ### CSS VALIDATION
 
+  CSS code verified with no errors with [W3C CSS validator](https://jigsaw.w3.org/css-validator).
+
   ### LIGHTHOUSE TEST
 
-  
+  All pages were tested with lighthouse scoring extremely well with desktop version having a perfect score! 
 
+  ![lighthouse test results for desktop home page](./assets/readme-images/lighthouse-test.png)
 
-
-
+<br>
 
 ## BUILD CONTEXT
 
 ### DESIGN
 
+  I used an all-device user centric approach. That means choosing a layout that would fit on smartphone screens but also be easily adaptable for bigger screens. First decision was to use standardized expected elements like the menu icon and header-content-footer layout. Then I decided to separate content consistently using card-like elements which would appear in column on mobile devices and optimally arrange themselves as screen size grew as they draw attention easily. Modern CSS flexbox allows this with ease. Content is arranged and styled to have a *clean* look and be intuitive to use. This was done keeping in mind how a user would perceive a page and avoiding anything that might cause leaving. I took inspiration from [Love running educational project](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/8.1-testing-and-validation) by [Code Institute](https://codeinstitute.net/global/) for landing image on home page and the idea to make it so that it's obvious you should scroll down.
+
 ### ENVIRONMENT
+
+  Entire project was built in [Gitpod](https://www.gitpod.io) using git for version control via command line interface. (git add and git commit commands) and using gitpod's server hosting perk (python3 -m http.server command)
 
 ### DEPLOYMENT
 
+  Project was pushed (git push command) to connected [GitHub](https://github.com) account and deployed there with public visibility. You can find the LIVE VERSION [here](https://cordamir.github.io/PerfectPosture/).
+
+  **CLONE PROJECT**
+
+  To clone a project from GitHub: 
+   - go to desired repository ([Perfect Posture is here](https://cordamir.github.io/PerfectPosture/))
+   - use the green "Code" button 
+   - use a convenient "copy to clipboard" icon to copy web url
+   - paste this url to your desired IDE (gitpod is really good)
+
+   <br>
+
 ## CREDITS
+
+  -  images used on home page and sign-up page are from [Unsplash](https://unsplash.com)
+  - images were converted to .webp format using [CloudConvert](https://cloudconvert.com)
+  - favicon icons used for tab image and header logo are from [Flaticon](www.flaticon.com)
+  - two used fonts are imported from [Google fonts](https://fonts.google.com)
+  - icons used for menu button on header and social media links on footer are from [Fontawesome](https://fontawesome.com)
+  - for advice on everything but especially pragmatic approach on project and uplifting communication special thanks to my mentor Spencer. You can find his website [here](https://5pence.net)
