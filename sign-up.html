@@ -39,7 +39,7 @@
                 <!-- standard icon for dropdown menu as a checkbox label -->
                 <input type="checkbox" id="menu-button" name="menu-toggle" class="hidden-element" aria-hidden="true"> 
                 <label for="menu-button" id="menu-icon">
-                    <i class="fa-solid fa-bars" aria-label="Menu opening icon"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </label>
                 
                 <!-- menu as a list -->
@@ -70,9 +70,11 @@
                     <label for="email">E-mail: </label>
                     <input type="email" id="email" name="e_mail" required>
             
-                    <label for="form-radio">Personalized training?</label>
+                    <p>Personalized training?</p>
                         
                     <fieldset id="form-radio">
+                        <legend class="hidden-element">Would you like personalized training?</legend>
+
                         <label for="radio-yes">Yes </label>
                         <input type="radio" id="radio-yes" name="personalized_plan" value="yes" required>
                         

@@ -246,8 +246,9 @@ semantic element as flexbox div */
     border-radius: 15px;
 }
 
-#signup-form label {
-    margin-bottom: 5px;
+#signup-form label,
+#signup-form p {
+    margin: 0 0 5px 0;
 }
 
 #signup-form input,
